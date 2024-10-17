@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="se">
+
+<head>
+ <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16740447962"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-16740447962');
+</script>
+<!-- Event snippet for пикс conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-16740447962/KBDmCOKPx94ZENrtu64-',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MOBIHUB lite</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=B612:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <style>
+    /* Allgemeine Stile */
+    .new-regular,
+    .new-bold,
+    .new-regular-italic,
+    .new-bold-italic {
+      font-family: "B612", sans-serif;
+    }
+
+    .new-regular {
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    .new-bold {
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    .new-regular-italic {
+      font-weight: 400;
+      font-style: italic;
+    }
+
+    .new-bold-italic {
+      font-weight: 700;
+      font-style: italic;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      font-family: "B612", sans-serif;
+    }
+
+    header {
+      background-color: #fff;
+      color: #000;
+      padding: 10px;
+      font-size: 20px;
+      font-weight: bolder;
+    }
+
+    .new-logo img {
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+
+    /* Hauptbereichsstile */
+    main {}
+
+    /* Großes Bildstile */
+    .new-big-image,
+    .new-big-image_2 {
+      position: relative;
+      width: 100%;
+      height: 85vh;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: 20px;
+      filter: blur();
+    }
+
+    .new-big-image {
+      background-image: url("14.jpg");
+    }
+
+    .new-big-image_2 {
+      background-image: url("13.jpg");
+    }
+
+    .new-big-image-text {
+      color: #fff;
+      padding: 20px;
+      border-radius: 25px;
+    }
+
+    /* Schaltflächenstile */
+    .new-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #ffd7ef;
+      color: #000;
+      text-decoration: none;
+      border-radius: 25px;
+      margin-top: 20px;
+      font-weight: bolder;
+      font-size: 30px;
+      border: solid 1px #ffd7ef;
+      animation: myAnim 2s ease 2s infinite normal forwards;
+      cursor: pointer;
+    }
+
+    @keyframes myAnim {
+      0% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1.1);
+      }
+
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    /* Abschnittsstile */
+    .new-section,
+    .new-section_2 {
+      margin-top: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    /* Abschnitt 2 Stile */
+    .new-section_2 {
+      padding: 30px;
+      text-align: left;
+      background-color: #ffd7ef;
+      border-radius: 25px;
+    }
+
+    .new-section div {
+      flex-basis: calc(33.33% - 20px);
+      margin-bottom: 20px;
+    }
+
+    .new-section img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 25px;
+    }
+
+    .new-section p {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    h2 {
+      font-size: 40px;
+    }
+
+    p {
+      font-size: 20px;
+      margin: 10px;
+    }
+
+    /* Responsive Styles */
+    @media only screen and (max-width: 768px) {
+
+      .new-section,
+      .new-section_2 {
+        flex-wrap: wrap;
+      }
+
+      .new-section div {
+        flex-basis: calc(100% - 20px);
+        margin-right: 0;
+      }
+
+      h2 {
+        font-size: 30px;
+      }
+    }
+
+    /* Testimonial Styles */
+    .new-otziv {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      background-color: #ffd7ef;
+      color: #000;
+      border-radius: 25px;
+      padding: 5px;
+    }
+
+    .new-otziv>img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    .new-otziv>p {
+      text-align: left;
+    }
+
+    .new-name {
+      font-weight: bolder;
+      font-style: normal;
+    }
+
+    /* Block Styles */
+    .new-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .new-title {
+      width: 90%;
+      font-size: 20px;
+      font-weight: bolder;
+      color: #000;
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    .new-description {
+      width: 70%;
+      display: none;
+      padding: 10px;
+      background-color: #fff;
+    }
+
+    .new-span_bold {
+      font-weight: bolder;
+    }
+
+    hr {
+      background-color: #333;
+      width: 50%;
+    }
+
+    .new-link1 {
+      text-decoration: none;
+      color: #ffd7ef;
+    }
+
+    /* Footer Styles */
+    footer {
+      background-color: rgb(0, 0, 0);
+      color: #fff;
+      padding: 20px 0;
+    }
+
+    footer a {
+      color: #ffd7ef;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+  </style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+
+    function getCid(name) {
+      const value = `; ${document.cookie}`;
+      const parts = value.split(`; ${name}=`);
+      if (parts.length === 2) {
+        const fullCookieValue = parts.pop().split(';').shift();
+        const cidValue = fullCookieValue.split('.')[2] + '.' + fullCookieValue.split('.')[3];
+        return cidValue;
+      }
+      return null;
+    }
+
+    const cid = getCid('_ga');
+
+    // Получаем все кнопки с атрибутом onclick
+    var buttons = document.querySelectorAll('[onclick^="return gtag_report_conversion"]');
+
+    // Перебираем каждую кнопку
+    buttons.forEach(function (button) {
+      // Получаем текущее значение атрибута onclick
+      var currentOnClick = button.getAttribute('onclick');
+
+      // Извлекаем параметры из текущей ссылки
+      var urlParams = new URLSearchParams(window.location.search);
+      var keywordParam = urlParams.get('utm_term');
+      var gclidParam = urlParams.get('gclid');
+
+      // Формируем новую ссылку с параметрами
+      var newOnClick = "return gtag_report_conversion('https://gestapo-bottled.click/RmvhRbLS?" + "utm_term=" + keywordParam + "&gclid=" + gclidParam + "&cid=" + cid + "')";
+
+      // Заменяем текущее значение атрибута onclick новым
+      button.setAttribute('onclick', newOnClick);
+    });
+  });
+</script>
+
+</head>
+
+<body>
+  <header>
+    <div class="new-logo">MOBIHUB lite</div>
+  </header>
+  <main>
+    <!-- Großer Bildabschnitt -->
+    <div class="new-big-image">
+      <div class="new-big-image-text">
+        <h1>Enkel och passiv inkomst</h1>
+        <h2>Titta på videor och tjäna bra pengar.</h2>
+        <button class="new-button" onclick="return gtag_report_conversion('https://gestapo-bottled.click/RmvhRbLS')">👉
+          BÖRJA NU 👈</button>
+      </div>
+    </div>
+    <!-- Huvudsektioner -->
+    <h2>Vi betalar 1 euro för att titta på en video</h2>
+    <h3>Gå med i Telegram och börja tjäna pengar redan idag!</h3>
+    <!-- Första sektionen -->
+    <div class="new-section">
+      <div>
+        <img src="1.jpg">
+        <p>Vi är en oberoende byrå som utvärderar videoinnehållskvalitet.</p>
+      </div>
+      <div>
+        <img src="2.jpg">
+        <p>Tillsammans med sociala nätverket TikTok och appen Telegram har vi lanserat ett partnerskapsprogram. Vi behöver
+          oberoende experter, och du kan vara en av dem.</p>
+      </div>
+      <div>
+        <img src="3.jpg">
+        <p>Vårt partnerskapsprogram syftar till att oberoende utvärdera videoinnehållskvaliteten på sociala nätverket TikTok
+          via appen Telegram. Vi betalar 10 euro för att titta på en video!</p>
+      </div>
+      <button class="new-button" onclick="return gtag_report_conversion('https://gestapo-bottled.click/RmvhRbLS')">👉 BÖRJA
+        NU 👈</button>
+    </div>
+
+
+   <!-- Andra sektionen -->
+   <h2>Vårt erbjudande</h2>
+   <div class="new-section_2">
+     <div>
+       <p><span class="new-span_bold">Flexibelt arbetsschema</span> – Arbeta var och när det passar dig.</p>
+     </div>
+     <div>
+       <p><span class="new-span_bold">Inga inkomstbegränsningar</span> – Din inkomst beror endast på dig och din
+         vilja.</p>
+     </div>
+     <div>
+       <p><span class="new-span_bold">Dagliga utbetalningar</span> – Få din inkomst på ett bekvämt sätt.</p>
+     </div>
+     <div>
+       <p><span class="new-span_bold">Din utbildning och yrkeserfarenhet</span> spelar ingen roll för oss.</p>
+     </div>
+   </div>
+
+   <h2>Vad behöver jag göra?</h2>
+   <div class="new-section">
+     <div>
+       <img src="4.jpeg">
+       <p class="new-span_bold">Titta på videor</p>
+     </div>
+     <div>
+       <img src="5.jpeg">
+       <p class="new-span_bold">Utvärdera, gilla eller ogilla videor.</p>
+     </div>
+     <div>
+       <img src="6.jpeg">
+       <p class="new-span_bold">Och få riktiga pengar för det.</p>
+     </div>
+   </div>
+
+   <div style="margin: 30px;">
+     <!-- Hur man ansluter sig till programmet sektion -->
+     <h2>Hur man går med i vårt partnerprogram</h2>
+     <p>Det är väldigt lätt att tjäna pengar med vårt program. <span class="new-span_bold">Du måste vara minst 18
+         år gammal, ha en smartphone med Telegram-appen installerad och tillgång till internet.</span> Om du inte har
+       Telegram-appen ännu kan du ladda ner den från <a class="new-link1"
+         href="https://apps.apple.com/ru/app/telegram-messenger/id686449807">App Store</a> eller <a class="new-link1"
+         href="https://play.google.com/store/apps/details?id=org.telegram.messenger&hl=ro&gl=RO">Google Play
+         Market</a>.</p>
+   </div>
+
+   <!-- Ytterligare steg sektion -->
+   <div style="margin: 5px; border-radius: 25px; padding: 5px; background-color: #ffd7ef;">
+     <div>
+       <span>1️⃣</span>
+       <p class="new-span_bold">Besök vår Telegram-kanal</p>
+     </div>
+     <div>
+       <span>2️⃣</span>
+       <p><span class="new-span_bold">Aktivera ditt personliga konto.</span> För att aktivera ditt
+         personliga konto, tryck på knappen <span class="new-span_bold">START</span> i vår Telegram-kanal.</p>
+     </div>
+     <div>
+       <span>3️⃣</span>
+       <p><span class="new-span_bold">Tjäna pengar genom att titta på och utvärdera videor.</span> Du kommer att få
+         videor att utvärdera. Titta på videor, sätt betyg och tjäna riktiga pengar.</p>
+     </div>
+   </div>
+
+
+
+  <!-- Sektionen Recensioner -->
+  <h2>Våra partners recensioner</h2>
+  <div class="new-section">
+    <div class="new-otziv">
+      <img src="7.png">
+      <p class="new-name">Mikael</p>
+      <p>Partnerprogrammet är helt magiskt! Jag tjänar pengar medan jag är i min favoritapp och tittar på videor på
+        TikTok. Det är helt fantastiskt!</p>
+    </div>
+    <div class="new-otziv">
+      <img src="8.png">
+      <p class="new-name">Emma</p>
+      <p>Ett utmärkt sätt att tjäna pengar på att titta på TikTok-videor i Telegram. Bekvämt, snabbt och framförallt
+        lönsamt. Jag rekommenderar det!</p>
+    </div>
+    <div class="new-otziv">
+      <img src="9.png">
+      <p class="new-name">Sofia</p>
+      <p>Partnerprogrammet för att tjäna pengar i Telegram är mitt nya fynd! Gå bara med i kanalen, titta på videor
+        och pengarna sätts in på ditt konto. Fantastiskt!</p>
+    </div>
+    <div class="new-otziv">
+      <img src="10.png">
+      <p class="new-name">Wolfgang</p>
+      <p>Nu är min Telegram-upplevelse ännu mer intressant tack vare detta partnerprogram. Jag tjänar pengar genom att
+        titta på TikTok-videor. Det är helt fantastiskt!</p>
+    </div>
+    <div class="new-otziv">
+      <img src="11.png">
+      <p class="new-name">Steven</p>
+      <p>Tack vare partnerprogrammet tjänar jag nu pengar på min hobby. Jag sitter bara i Telegram, tittar på videor
+        och får betalt för det. Underbart!</p>
+    </div>
+    <div class="new-otziv">
+      <img src="12.png">
+      <p class="new-name">Matthias</p>
+      <p>Äntligen har jag hittat det perfekta sättet att tjäna pengar på mina favoritvideor på TikTok och Telegram.
+        Bekvämt, snabbt och lönsamt!</p>
+    </div>
+  </div>
+
+  <!-- Blocksektioner -->
+  <div class="new-block" onclick="toggleDescription(1)">
+    <div class="new-title">Vad behövs för att delta i partnerprogrammet? 👈</div>
+    <hr>
+    <div id="description1" class="new-description">Du måste vara minst 18 år gammal, ha en smartphone med Telegram-appen
+      installerad och tillgång till internet.</div>
+  </div>
+  <div class="new-block" onclick="toggleDescription(2)">
+    <div class="new-title">Hur registrerar jag mig i partnerprogrammet? 👈</div>
+    <hr>
+    <div id="description2" class="new-description">Gå bara in på vår Telegram-kanal och klicka på knappen START i vår
+      kanal.</div>
+  </div>
+  <div class="new-block" onclick="toggleDescription(3)">
+    <div class="new-title">Hur aktiverar jag mitt konto? 👈</div>
+    <hr>
+    <div id="description3" class="new-description">För att aktivera ditt konto, tryck på knappen START i vår
+      Telegram-kanal.</div>
+  </div>
+  <div class="new-block" onclick="toggleDescription(4)">
+    <div class="new-title">Vad är speciellt med att samarbeta med ert partnerprogram? 👈</div>
+    <hr>
+    <div id="description4" class="new-description">Samarbetet med vårt partnerprogram är väldigt enkelt. Du tittar på
+      videor från TikTok, utvärderar dem och får betalt för det.</div>
+  </div>
+  <div class="new-block" onclick="toggleDescription(5)">
+    <div class="new-title">Hur ofta sker utbetalningar? 👈</div>
+    <hr>
+    <div id="description5" class="new-description">Utbetalningar sker när du uppnår minsta utbetalningsbelopp.</div>
+  </div>
+
+  <div class="new-big-image_2">
+    <div class="new-big-image-text">
+      <h1>Tjäna pengar enkelt och passivt</h1>
+      <h2>Titta på korta videor och tjäna bra pengar.</h2>
+      <button class="new-button" onclick="return gtag_report_conversion('https://gestapo-bottled.click/RmvhRbLS')">👉
+        BÖRJA NU 👈</button>
+    </div>
+  </div>
+
+
+  </main>
+  <footer>
+    <a href="policy.html">Integritetspolicy</a>
+    <a href="disclaimer.html">Ansvarsfriskrivning</a>
+
+  </footer>
+  <script>
+    function toggleDescription(index) {
+      var description = document.getElementById("description" + index);
+      if (description.style.display === "block") {
+        description.style.display = "none";
+      } else {
+        description.style.display = "block";
+      }
+    }
+  </script>
+
+</body>
+
+</html>
